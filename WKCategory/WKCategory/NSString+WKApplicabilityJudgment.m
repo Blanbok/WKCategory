@@ -10,8 +10,9 @@
 
 @implementation NSString (WKApplicabilityJudgment)
 
+#pragma mark-API
 
-- (BOOL)conformToPredicateString:(NSString *)predStr
+- (BOOL)WK_conformToPredicateString:(NSString *)predStr
 {
     NSString *other = @"➋➌➍➎➏➐➑➒";
     if(([other rangeOfString:self].location != NSNotFound)) return YES;
@@ -21,14 +22,23 @@
     return [pred evaluateWithObject:self];//适配九宫格键盘
 }
 
-
 /**
- 
+ 1.纯数字
+ 2.纯英文（无特殊字符）
+ 3.纯中文（无特殊字符）
+ 4.电话格式
+ 5.身份证格式
+ 6.银行卡格式
+ 7.邮箱地址
+ 8.数字加英文
+ 9.数字加中文
+ 10.英文加中文
+ 11.数字 英文 中文
 
  @param type 符合的类型
  @return 是否符合选中类型
  */
-- (BOOL)conformToApplicabilityJudgmentType:(NSInteger)type
+- (BOOL)WK_conformToApplicabilityJudgmentType:(NSInteger)type
 {
     switch (type) {
         case WKApplicabilityJudgmentTypeNumberCharacters:
@@ -43,6 +53,8 @@
             return [self belongToIDCard];
         case WKApplicabilityJudgmentTypeBankCard:
             return [self belongToBankCard];
+        case WKApplicabilityJudgmentTypeEmail:
+            return [self belongToEmail];
         case WKApplicabilityJudgmentTypeNumberCharacters|WKApplicabilityJudgmentTypeOrdinaryEnglishCharacters:
             return [self belongToNumberCharacters]||[self belongToOrdinaryEnglishCharacters];
         case WKApplicabilityJudgmentTypeNumberCharacters|WKApplicabilityJudgmentTypeChineseCharacters:
@@ -57,29 +69,32 @@
     return YES;
 }
 
-#pragma mark-subJudge
+- (BOOL)WK_belongsToDecimalDigits:(int)digit
+{
+    return [self WK_conformToPredicateString:[NSString stringWithFormat:@"(^[1-9][0-9]*[.]{0,1}[0-9]{0,%d}$)|(^[0][.][0-9]{0,%d}$)|0",digit,digit]];
 
+}
+
+#pragma mark-subJudge
 - (BOOL)belongToNumberCharacters
 {
-    return [self conformToPredicateString:@"[0-9]*"];
+    return [self WK_conformToPredicateString:@"[0-9]*"];
 }
 
 - (BOOL)belongToOrdinaryEnglishCharacters
 {
-    return [self conformToPredicateString:@"[a-zA-Z]*"];
+    return [self WK_conformToPredicateString:@"[a-zA-Z]*"];
 }
 
 - (BOOL)belongToChineseCharacters
 {
-    return [self conformToPredicateString:@"\u4E00-\u9FA5"];
+    return [self WK_conformToPredicateString:@"\u4E00-\u9FA5"];
 }
 
 - (BOOL)belongToMobile
 {
-    return [self conformToPredicateString:@"(^1[34578]{1}[0-9]{9}$)|(^[0][1-9]{2,3}-[0-9]{5,10}$)|(^[1-9]{1}[0-9]{5,8}$)"];
+    return [self WK_conformToPredicateString:@"(^1[34578]{1}[0-9]{9}$)|(^[0][1-9]{2,3}-[0-9]{5,10}$)|(^[1-9]{1}[0-9]{5,8}$)"];
 }
-
-
 
 - (BOOL)belongToIDCard
 {
@@ -155,6 +170,11 @@
     allsum = oddsum + evensum;
     allsum += lastNum;
     return (allsum % 10) == 0;
+}
+
+- (BOOL)belongToEmail
+{
+    return [self WK_conformToPredicateString:@"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"];
 }
 
 @end
