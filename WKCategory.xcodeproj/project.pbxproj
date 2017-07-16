@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		016473361F1BC8A400B5932B /* WKCategoryDocuments */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 016473371F1BC8A400B5932B /* Build configuration list for PBXAggregateTarget "WKCategoryDocuments" */;
+			buildPhases = (
+				0164733A1F1BC8D500B5932B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = WKCategoryDocuments;
+			productName = WKCategoryDocuments;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		841921B31F1B39DD00DE22C5 /* NSString+WKEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 841921B21F1B39DD00DE22C5 /* NSString+WKEncode.m */; };
 		841921BB1F1B5CD900DE22C5 /* UIImage+WKImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 841921BA1F1B5CD900DE22C5 /* UIImage+WKImageInfo.m */; };
@@ -147,6 +161,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = juyuanGroup;
 				TargetAttributes = {
+					016473361F1BC8A400B5932B = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 					84382AEA1F18C01800E0BCDF = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = GWCP73NNJ9;
@@ -168,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				84382AEA1F18C01800E0BCDF /* WKCategory */,
+				016473361F1BC8A400B5932B /* WKCategoryDocuments */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +203,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0164733A1F1BC8D500B5932B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"ACME\";\ncompanyID=\"com.ACME\";\ncompanyURL=\"http://ACME.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"~/help\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84382AE71F18C01800E0BCDF /* Sources */ = {
@@ -223,6 +259,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		016473381F1BC8A400B5932B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		016473391F1BC8A400B5932B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		84382B001F18C01900E0BCDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -342,6 +392,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		016473371F1BC8A400B5932B /* Build configuration list for PBXAggregateTarget "WKCategoryDocuments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016473381F1BC8A400B5932B /* Debug */,
+				016473391F1BC8A400B5932B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		84382AE61F18C01800E0BCDF /* Build configuration list for PBXProject "WKCategory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

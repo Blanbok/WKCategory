@@ -15,9 +15,12 @@
 
 @interface UIImage (WKGetImage)
 
+
 /**
  颜色转图片
 
+ @param color 条件颜色
+ @return 图片
  */
 + (UIImage *)WK_imageWithColor:(UIColor *)color;
 
@@ -42,9 +45,12 @@
  */
 - (UIImage*)WK_covertToGrayImage;
 
+
 /**
  设置UIImage的透明度
 
+ @param alpha 透明度
+ @return 图片
  */
 - (UIImage *)WK_imageByApplyingAlpha:(CGFloat) alpha;
 
