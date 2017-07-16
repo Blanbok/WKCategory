@@ -16,7 +16,6 @@
 		84382AFB1F18C01900E0BCDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84382AFA1F18C01900E0BCDF /* Assets.xcassets */; };
 		84382AFE1F18C01900E0BCDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84382AFC1F18C01900E0BCDF /* LaunchScreen.storyboard */; };
 		84382B0A1F18C07700E0BCDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84382B071F18C07700E0BCDF /* AppDelegate.m */; };
-		84382B0B1F18C07700E0BCDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84382B081F18C07700E0BCDF /* Info.plist */; };
 		84382B0C1F18C07700E0BCDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84382B091F18C07700E0BCDF /* main.m */; };
 		84382B101F18C15000E0BCDF /* NSString+WKApplicabilityJudgment.m in Sources */ = {isa = PBXBuildFile; fileRef = 84382B0F1F18C15000E0BCDF /* NSString+WKApplicabilityJudgment.m */; };
 /* End PBXBuildFile section */
@@ -178,7 +177,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84382B0B1F18C07700E0BCDF /* Info.plist in Resources */,
 				84382AFE1F18C01900E0BCDF /* LaunchScreen.storyboard in Resources */,
 				84382AFB1F18C01900E0BCDF /* Assets.xcassets in Resources */,
 				84382AF91F18C01800E0BCDF /* Main.storyboard in Resources */,
