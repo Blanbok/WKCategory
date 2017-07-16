@@ -10,7 +10,6 @@
 		841921B31F1B39DD00DE22C5 /* NSString+WKEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 841921B21F1B39DD00DE22C5 /* NSString+WKEncode.m */; };
 		841921BB1F1B5CD900DE22C5 /* UIImage+WKImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 841921BA1F1B5CD900DE22C5 /* UIImage+WKImageInfo.m */; };
 		841921BE1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 841921BD1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.m */; };
-		841921C01F1B663700DE22C5 /* Method.md in Sources */ = {isa = PBXBuildFile; fileRef = 841921BF1F1B663700DE22C5 /* Method.md */; };
 		841921C31F1B674300DE22C5 /* UIImage+WKGetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 841921C21F1B674300DE22C5 /* UIImage+WKGetImage.m */; };
 		84382AF61F18C01800E0BCDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84382AF51F18C01800E0BCDF /* ViewController.m */; };
 		84382AF91F18C01800E0BCDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84382AF71F18C01800E0BCDF /* Main.storyboard */; };
@@ -103,8 +102,8 @@
 		84382B0D1F18C0B400E0BCDF /* WKCategory */ = {
 			isa = PBXGroup;
 			children = (
-				841921C41F1B6BD800DE22C5 /* WKCategoryHeader.h */,
 				841921BF1F1B663700DE22C5 /* Method.md */,
+				841921C41F1B6BD800DE22C5 /* WKCategoryHeader.h */,
 				841921B51F1B4B6400DE22C5 /* WKGeneralHeader.h */,
 				841921B11F1B39DD00DE22C5 /* NSString+WKEncode.h */,
 				841921B21F1B39DD00DE22C5 /* NSString+WKEncode.m */,
@@ -194,7 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				84382B0A1F18C07700E0BCDF /* AppDelegate.m in Sources */,
-				841921C01F1B663700DE22C5 /* Method.md in Sources */,
 				84382B0C1F18C07700E0BCDF /* main.m in Sources */,
 				84382AF61F18C01800E0BCDF /* ViewController.m in Sources */,
 				841921B31F1B39DD00DE22C5 /* NSString+WKEncode.m in Sources */,
