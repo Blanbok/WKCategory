@@ -15,13 +15,20 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger,WKApplicabilityJudgmentType){
-    WKApplicabilityJudgmentTypeNumberCharacters             = 1,        ///数字
-    WKApplicabilityJudgmentTypeOrdinaryEnglishCharacters    = 1 << 1,   ///英文
-    WKApplicabilityJudgmentTypeChineseCharacters            = 1 << 2,   ///中文
-    WKApplicabilityJudgmentTypeMobile               = 1 << 3,           ///电话
-    WKApplicabilityJudgmentTypeIDCard               = 1 << 4,           ///身份证
-    WKApplicabilityJudgmentTypeBankCard             = 1 << 5,           ///银行卡
-    WKApplicabilityJudgmentTypeEmail             = 1 << 6,              ///邮箱
+    ///数字
+    WKApplicabilityJudgmentTypeNumberCharacters             = 1,
+    ///英文
+    WKApplicabilityJudgmentTypeOrdinaryEnglishCharacters    = 1 << 1,
+    ///中文
+    WKApplicabilityJudgmentTypeChineseCharacters            = 1 << 2,
+    ///电话
+    WKApplicabilityJudgmentTypeMobile               = 1 << 3,
+    ///身份证
+    WKApplicabilityJudgmentTypeIDCard               = 1 << 4,
+    ///银行卡
+    WKApplicabilityJudgmentTypeBankCard             = 1 << 5,
+    ///邮箱
+    WKApplicabilityJudgmentTypeEmail             = 1 << 6,
 
 };
 @interface NSString (WKApplicabilityJudgment)
