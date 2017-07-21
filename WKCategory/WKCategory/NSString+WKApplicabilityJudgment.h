@@ -44,7 +44,7 @@ typedef NS_ENUM(NSInteger,WKApplicabilityJudgmentType){
  
  @param type 类型
  */
-- (BOOL)WK_conformToApplicabilityJudgmentType:(NSInteger)type;
+- (BOOL)WK_conformToApplicabilityJudgmentType:(WKApplicabilityJudgmentType)type;
 
 /**
  保留小数位数几位
