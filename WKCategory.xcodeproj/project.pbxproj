@@ -42,7 +42,6 @@
 		841921BA1F1B5CD900DE22C5 /* UIImage+WKImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WKImageInfo.m"; sourceTree = "<group>"; };
 		841921BC1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WKApplicationInfo.h"; sourceTree = "<group>"; };
 		841921BD1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WKApplicationInfo.m"; sourceTree = "<group>"; };
-		841921BF1F1B663700DE22C5 /* Method.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Method.md; sourceTree = "<group>"; };
 		841921C11F1B674300DE22C5 /* UIImage+WKGetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WKGetImage.h"; sourceTree = "<group>"; };
 		841921C21F1B674300DE22C5 /* UIImage+WKGetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WKGetImage.m"; sourceTree = "<group>"; };
 		841921C41F1B6BD800DE22C5 /* WKCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKCategoryHeader.h; sourceTree = "<group>"; };
@@ -115,7 +114,6 @@
 		84382B0D1F18C0B400E0BCDF /* WKCategory */ = {
 			isa = PBXGroup;
 			children = (
-				841921BF1F1B663700DE22C5 /* Method.md */,
 				841921C41F1B6BD800DE22C5 /* WKCategoryHeader.h */,
 				841921B51F1B4B6400DE22C5 /* WKGeneralHeader.h */,
 				841921B11F1B39DD00DE22C5 /* NSString+WKEncode.h */,
@@ -314,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -357,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -399,6 +397,7 @@
 				016473391F1BC8A400B5932B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84382AE61F18C01800E0BCDF /* Build configuration list for PBXProject "WKCategory" */ = {
 			isa = XCConfigurationList;
