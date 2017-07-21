@@ -12,11 +12,12 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "A short description of WKCategory."
   s.homepage     = "https://github.com/Blanbok/WKCategory"
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   s.author             = { "Blanbok" => "a1653913692@icloud.com" }
   s.source       = { :git => "https://github.com/Blanbok/WKCategory.git", :tag => "#{s.version}" }
   s.source_files  = "./wkDataManger/WKCategory/*"
   s.requires_arc = true
   s.ios.deployment_target = "8.0"
+  s.platform     = :ios
 
 end
