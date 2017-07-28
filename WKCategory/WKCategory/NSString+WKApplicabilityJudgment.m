@@ -38,7 +38,7 @@
  @param type 符合的类型
  @return 是否符合选中类型
  */
-- (BOOL)WK_conformToApplicabilityJudgmentType:(NSInteger)type
+- (BOOL)WK_conformToApplicabilityJudgmentType:(WKApplicabilityJudgmentType)type
 {
     switch (type) {
         case WKApplicabilityJudgmentTypeNumberCharacters:
