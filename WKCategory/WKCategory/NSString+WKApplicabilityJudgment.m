@@ -40,7 +40,7 @@
  */
 - (BOOL)WK_conformToApplicabilityJudgmentType:(WKApplicabilityJudgmentType)type
 {
-    switch (type) {
+    switch ((NSInteger)type) {
         case WKApplicabilityJudgmentTypeNumberCharacters:
             return [self belongToNumberCharacters];
         case WKApplicabilityJudgmentTypeOrdinaryEnglishCharacters:
