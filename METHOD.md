@@ -3,11 +3,11 @@
 
 [TOC]
 # 1、禁止手机睡眠
-```
+```objective-c
  [UIApplication sharedApplication].idleTimerDisabled = YES;
 ```
 # 2、跳进app权限设置
-```
+```objective-c
 // 跳进app设置
             if (UIApplicationOpenSettingsURLString != NULL) {
                 UIApplication *application = [UIApplication sharedApplication];
@@ -21,14 +21,14 @@
             }
 ```
 # 3、给一个view截图
-```
+```objective-c
 UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 0.0);
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
 ```
 # 4、控制屏幕旋转，在控制器中写
-```
+```objective-c
 /** 是否支持自动转屏 */
 - (BOOL)shouldAutorotate {
     return YES;
@@ -45,7 +45,7 @@ UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 0.0);
 }
 ```
 # 5、获取app缓存大小
-```
+```objective-c
 - (CGFloat)getCachSize {
 
     NSUInteger imageCacheSize = [[SDImageCache sharedImageCache] getSize];
@@ -67,7 +67,7 @@ UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 0.0);
 }
 ```
 # 6、清理app缓存
-```
+```objective-c
 - (void)handleClearView {
     //删除两部分
     //1.删除 sd 图片缓存
@@ -82,7 +82,7 @@ UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 0.0);
 ```
 
 # 7、模型转字典
-```
+```objective-c
 static NSSet *classes;
 
 - (NSMutableDictionary *)getParameterDictionary {
@@ -143,7 +143,7 @@ static NSSet *classes;
 ```
 
 # 8、交换两个方法实现
-```
+```objective-c
 Class aClass = [self class]; 
 
         SEL originalSelector = @selector(viewWillAppear:); 
@@ -169,7 +169,7 @@ Class aClass = [self class];
 ```
 
 # 9、几个常用权限判断
-```
+```objective-c
 if ([CLLocationManager authorizationStatus] ==kCLAuthorizationStatusDenied) {
         NSLog(@"没有定位权限");
     }
@@ -190,7 +190,7 @@ if ([CLLocationManager authorizationStatus] ==kCLAuthorizationStatusDenied) {
 ```
 
 # 10、长按复制功能
-```
+```objective-c
 - (void)viewDidLoad
 {
     [self.view addGestureRecognizer:[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(pasteBoard:)]];
@@ -204,7 +204,7 @@ if ([CLLocationManager authorizationStatus] ==kCLAuthorizationStatusDenied) {
 ```
 
 # 11、获取手机和app信息
-```
+```objective-c
 NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];  
  CFShow(infoDictionary);  
 // app名称  
@@ -248,7 +248,7 @@ NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
 ```
 
 # 12、获取一个类的所有属性
-```
+```objective-c
 id LenderClass = objc_getClass("Lender");
 unsigned int outCount, i;
 objc_property_t *properties = class_copyPropertyList(LenderClass, &outCount);
@@ -260,7 +260,7 @@ for (i = 0; i < outCount; i++) {
 
 # 13、删除NSUserDefaults所有记录
 
-```
+```objective-c
 //方法一
   NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
  [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];   
@@ -278,7 +278,7 @@ for (i = 0; i < outCount; i++) {
 ```
 
 # 14、禁用系统滑动返回功能
-```
+```objective-c
 - (void)viewDidAppear:(BOOL)animated
 {
      [super viewDidAppear:animated];
@@ -298,7 +298,7 @@ if ([self.navigationController respondsToSelector:@selector(interactivePopGestur
 ```
 
 # 15、UILabel设置文字描边
-```
+```objective-c
 子类化UILabel，重写drawTextInRect方法
 - (void)drawTextInRect:(CGRect)rect
 {
@@ -318,7 +318,7 @@ if ([self.navigationController respondsToSelector:@selector(interactivePopGestur
 ```
 
 # 16、让手机震动一下
-```
+```objective-c
 倒入框架
 #import <AudioToolbox/AudioToolbox.h>
 AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
@@ -327,7 +327,7 @@ AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 ```
 
 # 17、摇一摇功能
-```
+```objective-c
 1、打开摇一摇功能
     [UIApplication sharedApplication].applicationSupportsShakeToEdit = YES;
 2、让需要摇动的控制器成为第一响应者
@@ -343,14 +343,14 @@ AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 ```
 
 # 18、设置屏幕方向
-```
+```objective-c
 NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeLeft];
 [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
 [UIViewController attemptRotationToDeviceOrientation];
 ```
 
 # 19、tableViewCell分割线顶到头
-```
+```objective-c
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     [cell setSeparatorInset:UIEdgeInsetsZero];
     [cell setLayoutMargins:UIEdgeInsetsZero];
@@ -364,12 +364,12 @@ NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationLand
 ```
 
 # 20、在状态栏增加网络请求的菊花，类似safari加载网页的时候状态栏菊花
-```
+```objective-c
 [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 ```
 
 # 21、获取屏幕方向
-```
+```objective-c
 UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
 
 if(orientation == 0) //Default orientation 
@@ -383,7 +383,7 @@ else if(orientation == UIInterfaceOrientationLandscapeRight)
 ```
 
 # 22、地图上两个点之间的实际距离
-```
+```objective-c
 // 需要导入#import <CoreLocation/CoreLocation.h>
 CLLocation *locA = [[CLLocation alloc] initWithLatitude:34 longitude:113];
     CLLocation *locB = [[CLLocation alloc] initWithLatitude:31.05 longitude:121.76];
@@ -392,7 +392,7 @@ CLLocation *locA = [[CLLocation alloc] initWithLatitude:34 longitude:113];
 ```
 
 # 23、在应用中打开设置的某个界面
-```
+```objective-c
 // 打开设置->通用
 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=General"]];
 
@@ -442,7 +442,7 @@ prefs:root=DO_NOT_DISTURB
 ```
 
 # 24、通知监听APP生命周期
-```
+```objective-c
 UIApplicationDidEnterBackgroundNotification 应用程序进入后台
 UIApplicationWillEnterForegroundNotification 应用程序将要进入前台
 UIApplicationDidFinishLaunchingNotification 应用程序完成启动
@@ -461,7 +461,7 @@ UIApplicationProtectedDataWillBecomeUnavailable 本地受保护的文件可用�
 ```
 
 # 25、触摸事件类型
-```
+```objective-c
 UIControlEventTouchCancel 取消控件当前触发的事件
 UIControlEventTouchDown 点按下去的事件
 UIControlEventTouchDownRepeat 重复的触动事件
@@ -474,7 +474,7 @@ UIControlEventTouchUpOutside 手指超出控制范围的控制中的触摸事件
 ```
 
 # 26、根据经纬度获取城市等信息
-```
+```objective-c
 // 创建经纬度
     CLLocation *location = [[CLLocation alloc] initWithLatitude:latitude longitude:longitude];
     //创建一个译码器
@@ -526,7 +526,7 @@ areasOfInterest        关联的或利益相关的地标
 ```
 
 # 27、某个界面多个事件同时响应引起的问题(比如，两个button同时按push到新界面，两个都会响应，可能导致push重叠)
-```
+```objective-c
 // UIView有个属性叫做exclusiveTouch，设置为YES后，其响应事件会和其他view互斥(有其他view事件响应的时候点击它不起作用)
 view.exclusiveTouch = YES;
 
@@ -538,7 +538,7 @@ view.exclusiveTouch = YES;
 ```
 
 # 28、启动页显示延时
-```
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 //  延时10s
@@ -548,7 +548,7 @@ view.exclusiveTouch = YES;
 ```
 
 # 29、获取手机RAM容量
-```
+```objective-c
 // 需要导入#import <mach/mach.h>
 mach_port_t host_port;
     mach_msg_type_number_t host_size;
@@ -574,7 +574,7 @@ mach_port_t host_port;
 ```
 
 # 30、获取当前应用CUP用量
-```
+```objective-c
 float cpu_usage()
 {
     kern_return_t kr;
@@ -639,7 +639,7 @@ float cpu_usage()
 ```
 
 # 31、给一个view截图
-```
+```objective-c
 UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 0.0);
 [view.layer renderInContext:UIGraphicsGetCurrentContext()];
 UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
