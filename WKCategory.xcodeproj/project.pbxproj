@@ -25,7 +25,7 @@
 		841921BB1F1B5CD900DE22C5 /* UIImage+WKImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 841921BA1F1B5CD900DE22C5 /* UIImage+WKImageInfo.m */; };
 		841921BE1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 841921BD1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.m */; };
 		841921C31F1B674300DE22C5 /* UIImage+WKGetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 841921C21F1B674300DE22C5 /* UIImage+WKGetImage.m */; };
-		842BA1231F34356B00EDA8FA /* UIView+Respner.m in Sources */ = {isa = PBXBuildFile; fileRef = 842BA1221F34356B00EDA8FA /* UIView+Respner.m */; };
+		842BA1261F3436DE00EDA8FA /* UIView+WKRespner.m in Sources */ = {isa = PBXBuildFile; fileRef = 842BA1251F3436DE00EDA8FA /* UIView+WKRespner.m */; };
 		84382AF61F18C01800E0BCDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84382AF51F18C01800E0BCDF /* ViewController.m */; };
 		84382AF91F18C01800E0BCDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84382AF71F18C01800E0BCDF /* Main.storyboard */; };
 		84382AFB1F18C01900E0BCDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84382AFA1F18C01900E0BCDF /* Assets.xcassets */; };
@@ -46,8 +46,8 @@
 		841921C11F1B674300DE22C5 /* UIImage+WKGetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WKGetImage.h"; sourceTree = "<group>"; };
 		841921C21F1B674300DE22C5 /* UIImage+WKGetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WKGetImage.m"; sourceTree = "<group>"; };
 		841921C41F1B6BD800DE22C5 /* WKCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKCategoryHeader.h; sourceTree = "<group>"; };
-		842BA1211F34356B00EDA8FA /* UIView+Respner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Respner.h"; sourceTree = "<group>"; };
-		842BA1221F34356B00EDA8FA /* UIView+Respner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Respner.m"; sourceTree = "<group>"; };
+		842BA1241F3436DE00EDA8FA /* UIView+WKRespner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WKRespner.h"; sourceTree = "<group>"; };
+		842BA1251F3436DE00EDA8FA /* UIView+WKRespner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WKRespner.m"; sourceTree = "<group>"; };
 		84382AEB1F18C01800E0BCDF /* WKCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84382AF41F18C01800E0BCDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		84382AF51F18C01800E0BCDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -129,8 +129,8 @@
 				841921C21F1B674300DE22C5 /* UIImage+WKGetImage.m */,
 				841921BC1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.h */,
 				841921BD1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.m */,
-				842BA1211F34356B00EDA8FA /* UIView+Respner.h */,
-				842BA1221F34356B00EDA8FA /* UIView+Respner.m */,
+				842BA1241F3436DE00EDA8FA /* UIView+WKRespner.h */,
+				842BA1251F3436DE00EDA8FA /* UIView+WKRespner.m */,
 			);
 			path = WKCategory;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842BA1231F34356B00EDA8FA /* UIView+Respner.m in Sources */,
+				842BA1261F3436DE00EDA8FA /* UIView+WKRespner.m in Sources */,
 				84382B0A1F18C07700E0BCDF /* AppDelegate.m in Sources */,
 				84382B0C1F18C07700E0BCDF /* main.m in Sources */,
 				84382AF61F18C01800E0BCDF /* ViewController.m in Sources */,

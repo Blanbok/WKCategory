@@ -1,14 +1,14 @@
 //
-//  UIView+Respner.m
+//  UIView+WKRespner.m
 //  WKCategory
 //
 //  Created by admin on 2017/8/4.
 //  Copyright © 2017年 juyuanGroup. All rights reserved.
 //
 
-#import "UIView+Respner.h"
+#import "UIView+WKRespner.h"
 
-@implementation UIView (Respner)
+@implementation UIView (WKRespner)
 
 - (UIViewController *)viewController
 {
@@ -24,6 +24,5 @@
         return [self controllerForView:nextResponse];
     }
 }
-
 
 @end

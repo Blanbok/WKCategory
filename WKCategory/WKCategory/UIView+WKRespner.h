@@ -1,5 +1,5 @@
 //
-//  UIView+Respner.h
+//  UIView+WKRespner.h
 //  WKCategory
 //
 //  Created by admin on 2017/8/4.
@@ -13,7 +13,7 @@
  */
 #import <UIKit/UIKit.h>
 
-@interface UIView (Respner)
+@interface UIView (WKRespner)
 
 /**
  视图类的控制器
