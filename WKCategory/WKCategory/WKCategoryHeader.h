@@ -15,5 +15,6 @@
 #import "UIImage+WKImageInfo.h"
 #import "UIImage+WKGetImage.h"
 #import "NSObject+WKApplicationInfo.h"
+#import "UIView+Respner.h"
 
 #endif /* WKCategoryHeader_h */
