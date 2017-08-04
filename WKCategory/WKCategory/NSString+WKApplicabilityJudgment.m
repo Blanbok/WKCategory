@@ -71,7 +71,7 @@
 
 - (BOOL)WK_belongsToDecimalDigits:(int)digit
 {
-    return [self WK_conformToPredicateString:[NSString stringWithFormat:@"(^[1-9][0-9]*[.]{0,1}[0-9]{0,%d}$)|(^[0][.][0-9]{0,%d}$)|0",digit,digit]];
+    return [self WK_conformToPredicateString:[NSString stringWithFormat:@"(^[1-9][0-9]*[/.]{0,1}[0-9]{0,%d}$)|(^[0][/.][0-9]{0,%d}$)|0",digit,digit]];
 
 }
 
@@ -174,7 +174,7 @@
 
 - (BOOL)belongToEmail
 {
-    return [self WK_conformToPredicateString:@"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"];
+    return [self WK_conformToPredicateString:@"[A-Z0-9a-z/._%+-]+@[A-Za-z0-9/.-]+\\.[A-Za-z]{2,4}"];
 }
 
 @end
