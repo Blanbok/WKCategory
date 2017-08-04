@@ -18,6 +18,6 @@
 /**
  视图类的控制器
  */
-@property (nonnull,nonatomic,strong,readonly) UIViewController *viewController;
+@property (nonnull,nonatomic,strong,readonly) UIViewController *controller;
 
 @end
