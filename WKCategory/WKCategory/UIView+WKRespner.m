@@ -18,6 +18,9 @@
 - (UIViewController*)controllerForView:(UIView*)view
 {
     id nextResponse = view.nextResponder;
+    if (nextResponse == nil) {
+        return nil;
+    }
     if ([nextResponse isKindOfClass:[UIViewController class]]) {
         return nextResponse;
     }else{
