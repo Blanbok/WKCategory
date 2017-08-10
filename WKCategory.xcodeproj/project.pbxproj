@@ -26,6 +26,7 @@
 		841921BE1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 841921BD1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.m */; };
 		841921C31F1B674300DE22C5 /* UIImage+WKGetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 841921C21F1B674300DE22C5 /* UIImage+WKGetImage.m */; };
 		842BA1261F3436DE00EDA8FA /* UIView+WKRespner.m in Sources */ = {isa = PBXBuildFile; fileRef = 842BA1251F3436DE00EDA8FA /* UIView+WKRespner.m */; };
+		8435531B1F3C32B400C59C32 /* UIButton+WKTouchEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8435531A1F3C32B400C59C32 /* UIButton+WKTouchEvent.m */; };
 		84382AF61F18C01800E0BCDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84382AF51F18C01800E0BCDF /* ViewController.m */; };
 		84382AF91F18C01800E0BCDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84382AF71F18C01800E0BCDF /* Main.storyboard */; };
 		84382AFB1F18C01900E0BCDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84382AFA1F18C01900E0BCDF /* Assets.xcassets */; };
@@ -48,6 +49,8 @@
 		841921C41F1B6BD800DE22C5 /* WKCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKCategoryHeader.h; sourceTree = "<group>"; };
 		842BA1241F3436DE00EDA8FA /* UIView+WKRespner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WKRespner.h"; sourceTree = "<group>"; };
 		842BA1251F3436DE00EDA8FA /* UIView+WKRespner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WKRespner.m"; sourceTree = "<group>"; };
+		843553191F3C32B400C59C32 /* UIButton+WKTouchEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WKTouchEvent.h"; sourceTree = "<group>"; };
+		8435531A1F3C32B400C59C32 /* UIButton+WKTouchEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WKTouchEvent.m"; sourceTree = "<group>"; };
 		84382AEB1F18C01800E0BCDF /* WKCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84382AF41F18C01800E0BCDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		84382AF51F18C01800E0BCDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				841921BD1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.m */,
 				842BA1241F3436DE00EDA8FA /* UIView+WKRespner.h */,
 				842BA1251F3436DE00EDA8FA /* UIView+WKRespner.m */,
+				843553191F3C32B400C59C32 /* UIButton+WKTouchEvent.h */,
+				8435531A1F3C32B400C59C32 /* UIButton+WKTouchEvent.m */,
 			);
 			path = WKCategory;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				841921BE1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.m in Sources */,
 				841921C31F1B674300DE22C5 /* UIImage+WKGetImage.m in Sources */,
 				84382B101F18C15000E0BCDF /* NSString+WKApplicabilityJudgment.m in Sources */,
+				8435531B1F3C32B400C59C32 /* UIButton+WKTouchEvent.m in Sources */,
 				841921BB1F1B5CD900DE22C5 /* UIImage+WKImageInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
