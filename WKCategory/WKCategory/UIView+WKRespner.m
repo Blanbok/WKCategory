@@ -10,7 +10,7 @@
 
 @implementation UIView (WKRespner)
 
-- (UIViewController *)controller
+- (UIViewController *)wk_controller
 {
     return [self controllerForView:self];
 }
