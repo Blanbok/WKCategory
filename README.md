@@ -6,7 +6,12 @@
 
 `pod 'WKCategory', :git=> 'https://github.com/Blanbok/WKCategory'`
 
- 如果你想判断一串字符串是否符合某个规范，请`#import "NSString+WKApplicabilityJudgment.h"`
+# 判断字符串
+
+ 如果你想判断一串字符串是否符合某个规范，请
+ 
+ `#import "NSString+WKApplicabilityJudgment.h"`
+ 
  然后调用您想要判断的类型进行判断
  ```objective-c 
  typedef NS_ENUM(NSInteger,WKApplicabilityJudgmentType){
@@ -47,6 +52,14 @@
 - (BOOL)WK_belongsToDecimalDigits:(int)digit;
 
  ```
+ 
+ # 访问当前视图的控制器
+ 
+ 如果你不希望在视图内部通过`block`或`delegate`回调控制器，请
+ 
+ `#import "UIView+WKRespner.h"`
+
+然后您可以直接使用`self.controller`来直接调用当前视图的控制器了。
  
 补充内容
 [不常应用的方法](./METHOD.md)
