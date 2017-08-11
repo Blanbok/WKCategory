@@ -1,6 +1,11 @@
 > WKCategory
 常用的类别
-    
+
+如果你想要将这个工具导入你的项目
+请使用
+
+`pod 'WKCategory', :git=> 'https://github.com/Blanbok/WKCategory'`
+
  如果你想判断一串字符串是否符合某个规范，请`#import "NSString+WKApplicabilityJudgment.h"`
  然后调用您想要判断的类型进行判断
  ```objective-c 
