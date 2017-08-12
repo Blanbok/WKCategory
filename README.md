@@ -4,7 +4,7 @@
 如果你想要将这个工具导入你的项目
 请使用
 
-`pod 'WKCategory', :git=> 'https://github.com/Blanbok/WKCategory'`
+`pod 'WKCategory', :git=> 'https://github.com/OComme/WKCategory'`
 
 # 判断字符串
 
