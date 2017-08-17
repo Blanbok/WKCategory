@@ -34,6 +34,7 @@
 		84382B0A1F18C07700E0BCDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84382B071F18C07700E0BCDF /* AppDelegate.m */; };
 		84382B0C1F18C07700E0BCDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84382B091F18C07700E0BCDF /* main.m */; };
 		84382B101F18C15000E0BCDF /* NSString+WKApplicabilityJudgment.m in Sources */ = {isa = PBXBuildFile; fileRef = 84382B0F1F18C15000E0BCDF /* NSString+WKApplicabilityJudgment.m */; };
+		84C7D9C71F456BB00016EE57 /* NSObject+WKDataDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C7D9C61F456BB00016EE57 /* NSObject+WKDataDeal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,8 @@
 		84382B091F18C07700E0BCDF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84382B0E1F18C15000E0BCDF /* NSString+WKApplicabilityJudgment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WKApplicabilityJudgment.h"; sourceTree = "<group>"; };
 		84382B0F1F18C15000E0BCDF /* NSString+WKApplicabilityJudgment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WKApplicabilityJudgment.m"; sourceTree = "<group>"; };
+		84C7D9C51F456BB00016EE57 /* NSObject+WKDataDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WKDataDeal.h"; sourceTree = "<group>"; };
+		84C7D9C61F456BB00016EE57 /* NSObject+WKDataDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WKDataDeal.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				842BA1251F3436DE00EDA8FA /* UIView+WKRespner.m */,
 				843553191F3C32B400C59C32 /* UIButton+WKTouchEvent.h */,
 				8435531A1F3C32B400C59C32 /* UIButton+WKTouchEvent.m */,
+				84C7D9C51F456BB00016EE57 /* NSObject+WKDataDeal.h */,
+				84C7D9C61F456BB00016EE57 /* NSObject+WKDataDeal.m */,
 			);
 			path = WKCategory;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				84382AF61F18C01800E0BCDF /* ViewController.m in Sources */,
 				841921B31F1B39DD00DE22C5 /* NSString+WKEncode.m in Sources */,
 				841921BE1F1B5D6F00DE22C5 /* NSObject+WKApplicationInfo.m in Sources */,
+				84C7D9C71F456BB00016EE57 /* NSObject+WKDataDeal.m in Sources */,
 				841921C31F1B674300DE22C5 /* UIImage+WKGetImage.m in Sources */,
 				84382B101F18C15000E0BCDF /* NSString+WKApplicabilityJudgment.m in Sources */,
 				8435531B1F3C32B400C59C32 /* UIButton+WKTouchEvent.m in Sources */,
