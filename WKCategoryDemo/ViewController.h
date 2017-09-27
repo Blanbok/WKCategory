@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  WKCategory
+//  WKCategoryDemo
 //
-//  Created by admin on 2017/7/14.
+//  Created by admin on 2017/9/27.
 //  Copyright © 2017年 juyuanGroup. All rights reserved.
 //
 

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:WKCategory.xcodeproj">
+      location = "self:WKCategoryDemo.xcodeproj">
    </FileRef>
 </Workspace>

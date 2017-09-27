@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
 
   s.name         = "WKCategory"
   s.version      = "0.0.2"
-  s.summary      = "A short description of WKCategory."
+  s.summary      = "Common category for Objective-C"
   s.homepage     = "https://github.com/OComme/WKCategory"
   s.license      = "MIT"
   s.author             = { "Blanbok" => "a1653913692@icloud.com" }
   s.source       = { :git => "https://github.com/OComme/WKCategory.git", :tag => "#{s.version}" }
-  s.source_files  = "WKCategory/WKCategory/*"
+  s.source_files  = "WKCategory/*"
   s.requires_arc = true
   s.ios.deployment_target = "8.0"
   s.platform     = :ios
