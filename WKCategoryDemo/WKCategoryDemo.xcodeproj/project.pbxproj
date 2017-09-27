@@ -42,8 +42,6 @@
 		849861221F7B6BC900DD8BA0 /* UIImage+WKImageInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WKImageInfo.m"; sourceTree = "<group>"; };
 		849861231F7B6BC900DD8BA0 /* UIView+WKRespner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WKRespner.h"; sourceTree = "<group>"; };
 		849861241F7B6BC900DD8BA0 /* UIView+WKRespner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WKRespner.m"; sourceTree = "<group>"; };
-		849861251F7B6BC900DD8BA0 /* WKCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKCategoryHeader.h; sourceTree = "<group>"; };
-		849861261F7B6BC900DD8BA0 /* WKGeneralHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKGeneralHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +107,6 @@
 				849861221F7B6BC900DD8BA0 /* UIImage+WKImageInfo.m */,
 				849861231F7B6BC900DD8BA0 /* UIView+WKRespner.h */,
 				849861241F7B6BC900DD8BA0 /* UIView+WKRespner.m */,
-				849861251F7B6BC900DD8BA0 /* WKCategoryHeader.h */,
-				849861261F7B6BC900DD8BA0 /* WKGeneralHeader.h */,
 			);
 			name = WKCategory;
 			path = ../../WKCategory;
@@ -263,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -312,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
