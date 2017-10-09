@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841B9F891F8B714F00E5ED68 /* NSArray+WKMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B9F881F8B714F00E5ED68 /* NSArray+WKMap.m */; };
+		841B9F8C1F8B72CE00E5ED68 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B9F8B1F8B72CE00E5ED68 /* UIView+Toast.m */; };
+		841B9F8E1F8B72EE00E5ED68 /* UIView+WKRespner.m in Sources */ = {isa = PBXBuildFile; fileRef = 849861241F7B6BC900DD8BA0 /* UIView+WKRespner.m */; };
 		849861001F7B6B8B00DD8BA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 849860FF1F7B6B8B00DD8BA0 /* AppDelegate.m */; };
 		849861031F7B6B8B00DD8BA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849861021F7B6B8B00DD8BA0 /* ViewController.m */; };
 		849861061F7B6B8B00DD8BA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849861041F7B6B8B00DD8BA0 /* Main.storyboard */; };
@@ -16,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		841B9F871F8B714F00E5ED68 /* NSArray+WKMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+WKMap.h"; sourceTree = "<group>"; };
+		841B9F881F8B714F00E5ED68 /* NSArray+WKMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WKMap.m"; sourceTree = "<group>"; };
+		841B9F8A1F8B72CE00E5ED68 /* UIView+Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		841B9F8B1F8B72CE00E5ED68 /* UIView+Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		849860FB1F7B6B8B00DD8BA0 /* WKCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849860FE1F7B6B8B00DD8BA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		849860FF1F7B6B8B00DD8BA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,6 +62,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841B9F8D1F8B72DF00E5ED68 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				849861231F7B6BC900DD8BA0 /* UIView+WKRespner.h */,
+				849861241F7B6BC900DD8BA0 /* UIView+WKRespner.m */,
+				841B9F8A1F8B72CE00E5ED68 /* UIView+Toast.h */,
+				841B9F8B1F8B72CE00E5ED68 /* UIView+Toast.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		841B9F8F1F8B72F100E5ED68 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				841B9F871F8B714F00E5ED68 /* NSArray+WKMap.h */,
+				841B9F881F8B714F00E5ED68 /* NSArray+WKMap.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		841B9F901F8B730200E5ED68 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				849861151F7B6BC900DD8BA0 /* NSObject+WKApplicationInfo.h */,
+				849861161F7B6BC900DD8BA0 /* NSObject+WKApplicationInfo.m */,
+				849861171F7B6BC900DD8BA0 /* NSObject+WKDataDeal.h */,
+				849861181F7B6BC900DD8BA0 /* NSObject+WKDataDeal.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		841B9F911F8B730D00E5ED68 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				849861191F7B6BC900DD8BA0 /* NSString+WKApplicabilityJudgment.h */,
+				8498611A1F7B6BC900DD8BA0 /* NSString+WKApplicabilityJudgment.m */,
+				8498611B1F7B6BC900DD8BA0 /* NSString+WKEncode.h */,
+				8498611C1F7B6BC900DD8BA0 /* NSString+WKEncode.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		841B9F921F8B731C00E5ED68 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				8498611F1F7B6BC900DD8BA0 /* UIImage+WKGetImage.h */,
+				849861201F7B6BC900DD8BA0 /* UIImage+WKGetImage.m */,
+				849861211F7B6BC900DD8BA0 /* UIImage+WKImageInfo.h */,
+				849861221F7B6BC900DD8BA0 /* UIImage+WKImageInfo.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		841B9F931F8B732500E5ED68 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				8498611D1F7B6BC900DD8BA0 /* UIButton+WKTouchEvent.h */,
+				8498611E1F7B6BC900DD8BA0 /* UIButton+WKTouchEvent.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
 		849860F21F7B6B8B00DD8BA0 = {
 			isa = PBXGroup;
 			children = (
@@ -91,22 +160,12 @@
 		849861141F7B6BC900DD8BA0 /* WKCategory */ = {
 			isa = PBXGroup;
 			children = (
-				849861151F7B6BC900DD8BA0 /* NSObject+WKApplicationInfo.h */,
-				849861161F7B6BC900DD8BA0 /* NSObject+WKApplicationInfo.m */,
-				849861171F7B6BC900DD8BA0 /* NSObject+WKDataDeal.h */,
-				849861181F7B6BC900DD8BA0 /* NSObject+WKDataDeal.m */,
-				849861191F7B6BC900DD8BA0 /* NSString+WKApplicabilityJudgment.h */,
-				8498611A1F7B6BC900DD8BA0 /* NSString+WKApplicabilityJudgment.m */,
-				8498611B1F7B6BC900DD8BA0 /* NSString+WKEncode.h */,
-				8498611C1F7B6BC900DD8BA0 /* NSString+WKEncode.m */,
-				8498611D1F7B6BC900DD8BA0 /* UIButton+WKTouchEvent.h */,
-				8498611E1F7B6BC900DD8BA0 /* UIButton+WKTouchEvent.m */,
-				8498611F1F7B6BC900DD8BA0 /* UIImage+WKGetImage.h */,
-				849861201F7B6BC900DD8BA0 /* UIImage+WKGetImage.m */,
-				849861211F7B6BC900DD8BA0 /* UIImage+WKImageInfo.h */,
-				849861221F7B6BC900DD8BA0 /* UIImage+WKImageInfo.m */,
-				849861231F7B6BC900DD8BA0 /* UIView+WKRespner.h */,
-				849861241F7B6BC900DD8BA0 /* UIView+WKRespner.m */,
+				841B9F931F8B732500E5ED68 /* UIButton */,
+				841B9F921F8B731C00E5ED68 /* UIImage */,
+				841B9F911F8B730D00E5ED68 /* NSString */,
+				841B9F901F8B730200E5ED68 /* NSObject */,
+				841B9F8F1F8B72F100E5ED68 /* NSArray */,
+				841B9F8D1F8B72DF00E5ED68 /* UIView */,
 			);
 			name = WKCategory;
 			path = ../../WKCategory;
@@ -183,9 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841B9F8E1F8B72EE00E5ED68 /* UIView+WKRespner.m in Sources */,
 				849861031F7B6B8B00DD8BA0 /* ViewController.m in Sources */,
 				8498610E1F7B6B8B00DD8BA0 /* main.m in Sources */,
 				849861001F7B6B8B00DD8BA0 /* AppDelegate.m in Sources */,
+				841B9F8C1F8B72CE00E5ED68 /* UIView+Toast.m in Sources */,
+				841B9F891F8B714F00E5ED68 /* NSArray+WKMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
