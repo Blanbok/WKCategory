@@ -16,6 +16,7 @@
 		849861081F7B6B8B00DD8BA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849861071F7B6B8B00DD8BA0 /* Assets.xcassets */; };
 		8498610B1F7B6B8B00DD8BA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849861091F7B6B8B00DD8BA0 /* LaunchScreen.storyboard */; };
 		8498610E1F7B6B8B00DD8BA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8498610D1F7B6B8B00DD8BA0 /* main.m */; };
+		8498B6871FCD2A76007EF0F0 /* UIViewController+WKController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8498B6861FCD2A76007EF0F0 /* UIViewController+WKController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		849861221F7B6BC900DD8BA0 /* UIImage+WKImageInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WKImageInfo.m"; sourceTree = "<group>"; };
 		849861231F7B6BC900DD8BA0 /* UIView+WKRespner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WKRespner.h"; sourceTree = "<group>"; };
 		849861241F7B6BC900DD8BA0 /* UIView+WKRespner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WKRespner.m"; sourceTree = "<group>"; };
+		8498B6851FCD2A76007EF0F0 /* UIViewController+WKController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WKController.h"; sourceTree = "<group>"; };
+		8498B6861FCD2A76007EF0F0 /* UIViewController+WKController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WKController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,7 @@
 		849861141F7B6BC900DD8BA0 /* WKCategory */ = {
 			isa = PBXGroup;
 			children = (
+				8498B6841FCD2A55007EF0F0 /* UIViewController */,
 				841B9F931F8B732500E5ED68 /* UIButton */,
 				841B9F921F8B731C00E5ED68 /* UIImage */,
 				841B9F911F8B730D00E5ED68 /* NSString */,
@@ -169,6 +173,15 @@
 			);
 			name = WKCategory;
 			path = ../../WKCategory;
+			sourceTree = "<group>";
+		};
+		8498B6841FCD2A55007EF0F0 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8498B6851FCD2A76007EF0F0 /* UIViewController+WKController.h */,
+				8498B6861FCD2A76007EF0F0 /* UIViewController+WKController.m */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +257,7 @@
 			files = (
 				841B9F8E1F8B72EE00E5ED68 /* UIView+WKRespner.m in Sources */,
 				849861031F7B6B8B00DD8BA0 /* ViewController.m in Sources */,
+				8498B6871FCD2A76007EF0F0 /* UIViewController+WKController.m in Sources */,
 				8498610E1F7B6B8B00DD8BA0 /* main.m in Sources */,
 				849861001F7B6B8B00DD8BA0 /* AppDelegate.m in Sources */,
 				841B9F8C1F8B72CE00E5ED68 /* UIView+Toast.m in Sources */,
