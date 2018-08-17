@@ -116,7 +116,7 @@
     NSInteger idCardMod=idCardWiSum%11;
     NSString *idCardLast= [identityString substringWithRange:NSMakeRange(17, 1)];
     if(idCardMod==2) {
-        if(![idCardLast isEqualToString:@"X"]||[idCardLast isEqualToString:@"x"]) {
+       if([@[@"x",@"X"]containsObject:idCardLast] == NO) {
             return NO;
         }
     }
